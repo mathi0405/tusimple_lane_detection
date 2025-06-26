@@ -1,0 +1,21 @@
+# ─ Project outputs ─
+outputs/
+*.mp4
+*.png
+
+# ─ Massive TuSimple dataset ─
+data/tusimple/**
+
+# ─ Model checkpoints ─
+*.pth
+*.pt
+*.onnx
+
+# ─ Python virtual-env ─
+venv/
+.env/
+__pycache__/
+
+# ─ OS noise ─
+.DS_Store
+Thumbs.db
