@@ -52,7 +52,7 @@ for thr in THRESHOLDS:
             print(f"   Batch {b_idx}: max pred = {mx:.3f}")
 
             # metrics
-            tot_iou += compute_iou(out, gtm)
+            tot_iou += compute_iou(out, gtm, threshold=thr)
             p,r,f1  = compute_precision_recall_f1(out, gtm, threshold=thr)
             tot_p   += p; tot_r += r; tot_f1 += f1; n += 1
 
